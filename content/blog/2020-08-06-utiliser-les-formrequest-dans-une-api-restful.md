@@ -9,7 +9,7 @@ tags:
   - restful
   - formrequest
   - validation
-draft: true
+draft: false
 ---
 Lorsque vient le temps, dans Laravel, de valider du contenu soumis par un utilisateur, les [Form Requests](https://laravel.com/docs/master/validation#form-request-validation) se révèlent d'une efficacité sans pareil.
 
