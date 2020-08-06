@@ -9,14 +9,14 @@ tags:
   - restful
   - formrequest
   - validation
-draft: false
+draft: true
 ---
 Lorsque vient le temps, dans Laravel, de valider du contenu soumis par un utilisateur, les [Form Requests](https://laravel.com/docs/master/validation#form-request-validation) se révèlent d'une efficacité sans pareil.
 
 Ils permettent d'isoler toute la logique de validation des données dans une classe dédiée, et de bloquer la requête si les données sont invalides ou encore si l'utilisateur n'aurait pas l'autorisation nécessaire.
 
 Si jamais dans votre API, les FormRequest renvoient ne renvoie pas le résultat escompté lorsque les données ne sont pas valides, c'est probablement car la requête ne spécifie pas qu'elle attend un résultat en JSON. Du coup, Laravel renvoie plutôt une redirection avec les messages d'erreurs.
-
+<!-- excerpt -->
 La première solution serait de toujours envoyer, dans la requête, un entête pour expliciter qu'on attend un JSON en réponse :
 
 ```http
