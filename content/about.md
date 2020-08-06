@@ -1,20 +1,13 @@
 ---
-title: About
+title: À propos
 date: 2019-07-09
 menu: main
+draft: true
 ---
-> A ready to use static blog, powered by [Cecil](https://cecil.app).
+Développeur dans la région de Québec, je suis originaire de France où j'ai effectué un BTS en Informatique de Gestion.
 
-## How to use?
+Après plusieurs années d'expérience en PHP, je découvre le framework Laravel avec lequel je travaille principalement.
 
-### Managing content with [Forestry](https://forestry.io)
+J'ai aussi travaillé avec Javascript, Python ou encore C#.
 
-If your goal is managing content quickly, and decide later where to deploy to it, use the following button to import the starter blog to Forestry CMS and start editing immediatelly!
-
-[![Import this project into Forestry](https://assets.forestry.io/import-to-forestryK.svg)](https://cecil.app/cms/forestry/import/)
-
-### Deploy with [Netlify](https://www.netlify.com)
-
-Otherwise, if your goal is deploying a new blog quickly, and manage content mannually, use the following button to configure and deploy your new blog on Netlify.
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Cecilapp/the-butler&stack=cms)
+Vous trouverez sur ce site une sorte de carnet de notes où j'inscris les problèmes que j'ai rencontré et solutions que j'ai pu trouvé. N'hésitez pas à communiquer avec moi par [Twitter](https://twitter.com/rachid_in).
