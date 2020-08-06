@@ -9,7 +9,7 @@ keywords: Cecil, Static Site Generator, SSG
 author: Arnaud Ligny
 date:
   format: j F Y
-  timezone: Europe/Paris
+  timezone: America/Montreal
 netlify:
   cms:
     path: admin
