@@ -2,7 +2,7 @@
 title: À propos
 date: 2019-07-09
 menu: main
-draft: true
+draft: false
 ---
 Développeur dans la région de Québec, je suis originaire de France où j'ai effectué un BTS en Informatique de Gestion.
 
