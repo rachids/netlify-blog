@@ -15,12 +15,12 @@ Lorsque vient le temps, dans Laravel, de valider du contenu soumis par un utilis
 
 Ils permettent d'isoler toute la logique de validation des données dans une classe dédiée, et de bloquer la requête si les données sont invalides ou encore si l'utilisateur n'aurait pas l'autorisation nécessaire.
 
-Si jamais dans votre API, les FormRequest renvoient ne renvoie pas le résultat escompté lorsque les données ne sont pas valides, c'est probablement car la requête ne spécifie pas qu'elle attend un résultat en JSON. Du coup, Laravel renvoie plutôt une redirection avec les messages d'erreurs.
+Mais lorsqu'on travaille avec une API, il se peut que les FormRequests retournent une redirection plutôt qu'une réponse JSON standard. Ceci est dû au fait que la requête ne spécifie pas qu'elle attend un résultat en JSON. Du coup, Laravel renvoie plutôt une redirection avec les messages d'erreurs.
 <!-- excerpt -->
-La première solution serait de toujours envoyer, dans la requête, un entête pour expliciter qu'on attend un JSON en réponse :
+La première solution (et celle que je préconise) serait de toujours envoyer, dans la requête, un entête pour expliciter qu'on attend un JSON en réponse :
 
 ```http
-Accept: aplication/json
+Accept: application/json
 ```
 
 La seconde solution que je vous propose est de créer une classe qui hérite de FormRequest, on l'appellera ApiFormRequest et c'est elle qui aura la responsabilité de renvoyer les erreurs au format JSON. Cette classe se logera très bien dans le dossier App/Http/Requests
